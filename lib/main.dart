@@ -40,25 +40,29 @@ class MyHomeApp extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.fromLTRB(25.0, 215.0, 0.0, 0.0),
-                child: Text(
-                  "There",
-                  style: TextStyle(
-                    fontSize: 75.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.fromLTRB(220.0, 191.0, 0.0, 0.0),
-                child: Text(
-                  ".",
-                  style: TextStyle(
-                      fontSize: 100.0,
-                      fontWeight: FontWeight.bold,
-                      color: green),
-                ),
-              ),
+                  padding: EdgeInsets.fromLTRB(25.0, 215.0, 0.0, 0.0),
+                  child: Row(
+                    children: [
+                      Container(
+                        child: Text(
+                          "There",
+                          style: TextStyle(
+                            fontSize: 75.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      Container(
+                        child: Text(
+                          ".",
+                          style: TextStyle(
+                              fontSize: 75.0,
+                              fontWeight: FontWeight.bold,
+                              color: green),
+                        ),
+                      ),
+                    ],
+                  )),
             ],
           ),
           Expanded(
